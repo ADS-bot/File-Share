@@ -1,0 +1,17 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "filesharing/wsbi.py",
+        "use": "@vercel/python",
+        "config": {"maxLambdaSize" : "35mb", "runtime" : "python3.9"}
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "filesharing/wsbi.py"
+      }
+    ]
+  }
+  
