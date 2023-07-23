@@ -25,10 +25,7 @@ SECRET_KEY = os.getenv('SECRET_ENV')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    'myfile-sharing-app.herokuapp.com',
-    '127.0.0.1',
-]
+ALLOWED_HOSTS = ['.vercel.app']
 
 
 # Application definition
